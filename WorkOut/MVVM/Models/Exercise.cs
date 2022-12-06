@@ -10,5 +10,6 @@ namespace WorkOut.MVVM.Models
     {
         public string Name { get; set; }
         public int CategoryId { get; set; }
+        public bool IsCompleted { get; set; }
     }
 }
