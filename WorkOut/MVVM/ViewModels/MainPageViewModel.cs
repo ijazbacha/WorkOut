@@ -36,14 +36,19 @@ namespace WorkOut.MVVM.ViewModels
             Exercises = new ObservableCollection<Exercise>()
             {
                 new Exercise{Name="Plank", CategoryId=1, IsCompleted=false},
-                new Exercise{Name="Plank", CategoryId=2, IsCompleted=false},
-                new Exercise{Name="Bicycle Crunch", CategoryId=1, IsCompleted=false},
-                new Exercise{Name="Bicycle Crunch", CategoryId=3, IsCompleted=false},
-                new Exercise{Name="Pushups", CategoryId=7, IsCompleted=false},
-                new Exercise{Name="Pushups", CategoryId=5, IsCompleted=false},
-                new Exercise{Name="Running", CategoryId=8, IsCompleted=false},
-                new Exercise{Name="Burpee", CategoryId=9, IsCompleted=false},
-                new Exercise{Name="Dips", CategoryId=6, IsCompleted=false},
+                new Exercise{Name="Mountain Climb", CategoryId=1, IsCompleted=false},
+                new Exercise{Name="Side Bend", CategoryId=2, IsCompleted=false},
+                new Exercise{Name="Bicycle Crunch", CategoryId=2, IsCompleted=false},
+                new Exercise{Name="Bridge", CategoryId=3, IsCompleted=false},
+                new Exercise{Name="Pushups", CategoryId=3, IsCompleted=false},
+                new Exercise{Name="Running", CategoryId=4, IsCompleted=false},
+                new Exercise{Name="Burpee", CategoryId=5, IsCompleted=false},
+                new Exercise{Name="Dips", CategoryId=5, IsCompleted=false},
+                new Exercise{Name="Fly Arm", CategoryId=6, IsCompleted=false},
+                new Exercise{Name="Tri Dips", CategoryId=7, IsCompleted=false},
+                new Exercise{Name="Feet Rise", CategoryId=7, IsCompleted=false},
+                new Exercise{Name="T-rotation", CategoryId=8, IsCompleted=false},
+                new Exercise{Name="Plank Tap", CategoryId=9, IsCompleted=false},
             };
         }
     }

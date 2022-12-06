@@ -2,13 +2,20 @@
 <?xml-comp compile="true" ?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    
+
+    <Shadow x:Key="RoundShadow"
+            Brush="Gray"
+            Opacity="0.7"
+            Radius="15"
+            Offset="10,15"/>
+
     <Style TargetType="Label" Class="WhiteTxt">
         <Setter Property="TextColor" Value="White" />
     </Style>
 
     <Style TargetType="Label" Class="BlackText">
         <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Shadow" Value="{StaticResource RoundShadow}" />
     </Style>
 
     <Style TargetType="Label" Class="LightGray">
@@ -45,5 +52,12 @@
 
     <Style TargetType="Label" Class="SmallTxt">
         <Setter Property="FontSize" Value="Small" />
+    </Style>
+
+    <Style TargetType="RoundRectangle" >
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Fill" Value="LightGray" />
+        <Setter Property="WidthRequest" Value="150" />
+        <Setter Property="Shadow" Value="{StaticResource RoundShadow}" />
     </Style>
 </ResourceDictionary>
