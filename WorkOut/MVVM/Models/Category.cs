@@ -11,5 +11,6 @@ namespace WorkOut.MVVM.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public int PendingExercises { get; set; }
+        public float Percentage { get; set; }
     }
 }

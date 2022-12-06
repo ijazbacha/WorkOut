@@ -16,6 +16,22 @@ namespace WorkOut.MVVM.ViewModels
         public MainPageViewModel()
         {
             LoadData();
+            FindPendingExercise();
+        }
+
+        private void FindPendingExercise()
+        {
+            foreach (var category in Categories)
+            {
+                var ExerciseByCategory = Exercises.Where(item => item.CategoryId == category.Id).ToList();
+                
+                var Pending = ExerciseByCategory.Where(item => item.IsCompleted == false).ToList();
+                category.PendingExercises = Pending.Count();
+
+                var Completed = ExerciseByCategory.Where(item => item.IsCompleted == true).ToList();
+                category.Percentage = (float)Completed.Count() / (float)ExerciseByCategory.Count();
+                
+            }
         }
 
         private void LoadData()
@@ -35,13 +51,13 @@ namespace WorkOut.MVVM.ViewModels
 
             Exercises = new ObservableCollection<Exercise>()
             {
-                new Exercise{Name="Plank", CategoryId=1, IsCompleted=false},
+                new Exercise{Name="Plank", CategoryId=1, IsCompleted=true},
                 new Exercise{Name="Mountain Climb", CategoryId=1, IsCompleted=false},
                 new Exercise{Name="Side Bend", CategoryId=2, IsCompleted=false},
                 new Exercise{Name="Bicycle Crunch", CategoryId=2, IsCompleted=false},
                 new Exercise{Name="Bridge", CategoryId=3, IsCompleted=false},
-                new Exercise{Name="Pushups", CategoryId=3, IsCompleted=false},
-                new Exercise{Name="Running", CategoryId=4, IsCompleted=false},
+                new Exercise{Name="Pushups", CategoryId=3, IsCompleted=true},
+                new Exercise{Name="Running", CategoryId=4, IsCompleted=true},
                 new Exercise{Name="Burpee", CategoryId=5, IsCompleted=false},
                 new Exercise{Name="Dips", CategoryId=5, IsCompleted=false},
                 new Exercise{Name="Fly Arm", CategoryId=6, IsCompleted=false},

@@ -25,7 +25,14 @@
                         <Grid Padding="5">
                             <RoundRectangle />
                             <VerticalStackLayout Padding="15">
+                                <Label Text="{Binding PendingExercises}"
+                                       StyleClass="BoldTxt,DarkGray"/>
                                 <Label Text="{Binding Title}" />
+                                <ProgressBar
+                                    x:Name="progressBar"
+                                    Progress="{Binding Percentage}"
+                                    ProgressColor="Green"
+                                    />
                             </VerticalStackLayout>
                         </Grid>
                     </DataTemplate>
