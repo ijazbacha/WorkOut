@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <Style TargetType="Label" Class="WhiteTxt">
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style TargetType="Label" Class="BlackText">
+        <Setter Property="TextColor" Value="Black" />
+    </Style>
+
+    <Style TargetType="Label" Class="LightGray">
+        <Setter Property="TextColor" Value="LightGray" />
+    </Style>
+
+    <Style TargetType="Label" Class="DarkGray">
+        <Setter Property="TextColor" Value="DarkGray" />
+    </Style>
+
+    <Style TargetType="Label" Class="BoldTxt">
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <Style TargetType="Label" Class="ItalicTxt">
+        <Setter Property="FontAttributes" Value="Italic" />
+    </Style>
+
+    <Style TargetType="Label" Class="HeaderTxt">
+        <Setter Property="FontSize" Value="Header" />
+    </Style>
+
+    <Style TargetType="Label" Class="TitleTxt">
+        <Setter Property="FontSize" Value="Title" />
+    </Style>
+
+    <Style TargetType="Label" Class="LargeTxt">
+        <Setter Property="FontSize" Value="Large" />
+    </Style>
+
+    <Style TargetType="Label" Class="MediumTxt">
+        <Setter Property="FontSize" Value="Medium" />
+    </Style>
+
+    <Style TargetType="Label" Class="SmallTxt">
+        <Setter Property="FontSize" Value="Small" />
+    </Style>
+</ResourceDictionary>
