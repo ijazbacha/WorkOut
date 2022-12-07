@@ -8,6 +8,9 @@
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="MVVM\Views\AddNewExercise.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="MVVM\Views\ExercisePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
