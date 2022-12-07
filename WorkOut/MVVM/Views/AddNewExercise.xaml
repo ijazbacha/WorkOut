@@ -31,7 +31,7 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Grid.Row="1">
+                    <Frame>
                         <RadioButton Content="{Binding Title}"
                                      GroupName="Category"
                                      IsChecked="{Binding IsSelected}"/>
@@ -40,5 +40,9 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
+        <HorizontalStackLayout Grid.Row="3">
+            <Button Text="Add Exercise" />
+            <Button Text="Add Category" />
+        </HorizontalStackLayout>
     </Grid>
 </ContentPage>
