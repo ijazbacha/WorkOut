@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WorkOut.MVVM.Views.ExercisePage"
-             Title="ExercisePage">
+             Title="Exercise">
     
     <Grid RowDefinitions=".1*,.3*,.7*">
         <Label 
@@ -45,7 +45,7 @@
                 Text="All Exercises" 
                 StyleClass="BoldTxt" 
                 Padding="5"
-                Margin="0,15"/>
+                Margin="0,10"/>
 
             <CollectionView Grid.Row="1" ItemsSource="{Binding Exercises}">
                 <CollectionView.ItemTemplate>
@@ -75,6 +75,9 @@
 
         </Grid>
 
-       
+        <Button Text="+" 
+                Style="{StaticResource PlusBtn}" 
+                Grid.Row="2" />
+        
     </Grid>
 </ContentPage>

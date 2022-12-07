@@ -60,4 +60,20 @@
         <Setter Property="WidthRequest" Value="150" />
         <Setter Property="Shadow" Value="{StaticResource RoundShadow}" />
     </Style>
+
+    <EllipseGeometry
+        x:Key="CricleBtn"
+        RadiusX="30"
+        RadiusY="30"
+        Center="50, 50"/>
+
+    <Style TargetType="Button" x:Key="PlusBtn">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="WidthRequest" Value="100" />
+        <Setter Property="HeightRequest" Value="100" />
+        <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="Clip" Value="{StaticResource CricleBtn}" />
+    </Style>
 </ResourceDictionary>
