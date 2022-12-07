@@ -25,5 +25,13 @@ public partial class AddNewExercise : ContentPage
 			ExViewModel.Exercises.Add(NewExercise);
 			Navigation.PopAsync();
 		}
+		else if(ExViewModel.Exercise == null)
+		{
+            DisplayAlert("Input Warning", "Exercise Field is Empty", "ok");
+        }
+		else
+		{
+			DisplayAlert("Category Warning", "Please Select Category", "ok");
+		}
 	}
 }
