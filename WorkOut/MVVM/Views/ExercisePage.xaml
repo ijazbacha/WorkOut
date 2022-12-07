@@ -13,7 +13,7 @@
             FontSize="25"/>
         
         <Grid Grid.Row="1" RowDefinitions=".2*,.8*">
-            <Label Text="Categories" Padding="5" StyleClass="BlackTxt,BoldTxt" />
+            <Label Text="Categories" Padding="5" StyleClass="BoldTxt" />
             <CollectionView 
                 Grid.Row="1" 
                 ItemsSource="{Binding Categories}">
@@ -25,7 +25,7 @@
                         <Grid Padding="5">
                             <RoundRectangle />
                             <VerticalStackLayout Padding="15">
-                                <Label Text="{Binding PendingExercises}"
+                                <Label Text="{Binding PendingExercises, StringFormat='{0} Pending'}"
                                        StyleClass="BoldTxt,DarkGray"/>
                                 <Label Text="{Binding Title}" />
                                 <ProgressBar
@@ -40,6 +40,38 @@
             </CollectionView>
         </Grid>
         
-        <Grid Grid.Row="2"></Grid>
+        <Grid Grid.Row="2" RowDefinitions=".1*,.8*">
+            <Label 
+                Text="All Exercises" 
+                StyleClass="BoldTxt" 
+                Padding="5"
+                Margin="0,15"/>
+
+            <CollectionView Grid.Row="1" ItemsSource="{Binding Exercises}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border 
+                            Stroke="#C49B33"
+                            StrokeThickness="1"
+                            Margin="5"
+                            BackgroundColor="LightGray">
+                            <Grid 
+                            Margin="5"
+                            Padding="5">
+                            <HorizontalStackLayout
+                                Padding="5">
+                                <CheckBox 
+                                    IsChecked="{Binding IsCompleted}"/>
+                                <Label Text="{Binding Name}"
+                                       VerticalOptions="Center"
+                                    HorizontalOptions="Center"/>
+                            </HorizontalStackLayout>
+                        </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Grid>
     </Grid>
 </ContentPage>

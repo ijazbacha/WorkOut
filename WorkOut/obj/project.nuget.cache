@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ywElvgsB6FILiAsBUs1SH6aafc8pbeKmkI5uinc8t38PsnCq385YYZnwGYGdOO1cXhFPKujB2BrH5H/671d6+w==",
+  "dgSpecHash": "cR0APlFXl7JzFtJRJ1wbx0eur9JSYfUtbBZuX/QurMkm97qrN6/KQ5NcdLzneSQYrXFBY+V6SOle4kH/nSj28A==",
   "success": true,
   "projectFilePath": "C:\\Users\\IjazAhmad\\source\\repos\\WorkOut\\WorkOut\\WorkOut.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IjazAhmad\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.403\\microsoft.maui.graphics.win2d.winui.desktop.6.0.403.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.3\\microsoft.windowsappsdk.1.1.3.nupkg.sha512",
+    "C:\\Users\\IjazAhmad\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\IjazAhmad\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",

@@ -954,3 +954,6 @@ C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\stamp\_
 C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\WorkOut.csproj.Fody.CopyLocal.cache
+C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\WorkOut.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\IjazAhmad\source\repos\WorkOut\WorkOut\obj\Debug\net6.0-android\android\assets\PropertyChanged.dll
