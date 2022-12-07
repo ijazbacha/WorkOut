@@ -21,7 +21,8 @@
         <CollectionView 
             Grid.Row="2" 
             Margin="5"  
-            ItemsSource="{Binding Categories}">
+            ItemsSource="{Binding Categories}"
+            ItemsUpdatingScrollMode="KeepLastItemInView">
             <CollectionView.ItemsLayout>
                 <GridItemsLayout 
                     Span="2" 
