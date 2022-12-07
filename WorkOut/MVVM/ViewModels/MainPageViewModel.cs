@@ -19,7 +19,7 @@ namespace WorkOut.MVVM.ViewModels
             FindPendingExercise();
         }
 
-        private void FindPendingExercise()
+        public void FindPendingExercise()
         {
             foreach (var category in Categories)
             {
