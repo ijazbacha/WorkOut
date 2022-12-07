@@ -6,6 +6,7 @@
     <Grid RowDefinitions=".1*,.05*,.7*,.1*">
         <Border Style="{StaticResource EntryBorder}">
             <Entry 
+                Text="{Binding Exercise}"
             Placeholder="Enter Exercise Name"
             Style="{StaticResource EntryStyle}"/>
         </Border>
@@ -40,9 +41,20 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <HorizontalStackLayout Grid.Row="3">
-            <Button Text="Add Exercise" />
-            <Button Text="Add Category" />
+        <HorizontalStackLayout Grid.Row="3"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Spacing="10">
+            <Button Text="Add Exercise" 
+                    FontAttributes="Bold" 
+                    HeightRequest="50" 
+                    CornerRadius="10"
+                    Clicked="Button_Clicked"/>
+            
+            <Button Text="Add Category" 
+                    FontAttributes="Bold"
+                    HeightRequest="50" 
+                    CornerRadius="10" />
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>
