@@ -16,8 +16,17 @@ public partial class ExercisePage : ContentPage
         MainPageVM.FindPendingExercise();
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
+    private  void Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AddNewExercise());
+        var PassingData = new AddNewExercise
+        {
+            BindingContext = new AddExerciseViewModel
+            {
+                Exercises = MainPageVM.Exercises,
+                Categories = MainPageVM.Categories,
+            }
+        };
+         
+        Navigation.PushAsync(PassingData);
     }
 };
