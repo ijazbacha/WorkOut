@@ -3,7 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WorkOut.MVVM.Views.AddNewExercise"
              Title="Add Exercise">
-    <Grid>
+    <Grid RowDefinitions=".1*,.05*,.7*,.1*">
+        <Border Style="{StaticResource EntryBorder}">
+            <Entry 
+            Placeholder="Enter Exercise Name"
+            Style="{StaticResource EntryStyle}"/>
+        </Border>
+
+        <Label 
+            Grid.Row="1" 
+            Text="Categories"
+            StyleClass="BoldTxt"
+            Padding="5"
+            Margin="0,5"/>
         
+        <CollectionView 
+            Grid.Row="2" 
+            Margin="5"  
+            ItemsSource="{Binding Categories}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout 
+                    Span="2" 
+                    
+                    Orientation="Vertical" 
+                    VerticalItemSpacing="5"
+                    HorizontalItemSpacing="5"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Grid.Row="1">
+                        <RadioButton Content="{Binding Title}"
+                                     GroupName="Category"
+                                     IsChecked="{Binding IsSelected}"/>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
     </Grid>
 </ContentPage>

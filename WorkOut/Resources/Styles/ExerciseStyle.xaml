@@ -76,4 +76,16 @@
         <Setter Property="HorizontalOptions" Value="End" />
         <Setter Property="Clip" Value="{StaticResource CricleBtn}" />
     </Style>
+
+    <Style TargetType="Entry" x:Key="EntryStyle">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="Margin" Value="5,0,0,0" />
+        <Setter Property="HeightRequest" Value="50" />
+    </Style>
+
+    <Style TargetType="Border" x:Key="EntryBorder">
+        <Setter Property="Stroke" Value="#C49B33" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
 </ResourceDictionary>
