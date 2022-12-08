@@ -55,7 +55,8 @@
             <Button Text="Add Category" 
                     FontAttributes="Bold"
                     HeightRequest="50" 
-                    CornerRadius="10" />
+                    CornerRadius="10"
+                    Clicked="Button_Clicked_1"/>
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>

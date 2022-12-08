@@ -34,4 +34,16 @@ public partial class AddNewExercise : ContentPage
 			DisplayAlert("Category Warning", "Please Select Category", "ok");
 		}
 	}
+
+	private async void Button_Clicked_1(object sender, EventArgs e)
+	{
+		var modelView = BindingContext as AddExerciseViewModel;
+		var categoryTitle = await DisplayPromptAsync("Add New Category",
+			"Category Name", maxLength:50, keyboard: Keyboard.Text);
+		modelView.Categories.Add(new Category
+		{
+			Id = modelView.Categories.Count() + 1,
+			Title = categoryTitle
+		}) ;
+	}
 }
